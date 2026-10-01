@@ -9,7 +9,7 @@ Preserve [MainWP](https://mainwp.com/)'s connection details from being overwritt
 
 ## Problem
 
-When using MainWP to manage WordPress child sites and WP Migrate to perform database push/pull operations between staging, development, and production environments, WP Migrate overwrites the `wp_options` table values containing MainWP's child site authentication details. 
+When using MainWP to manage WordPress child sites and WP Migrate to perform database push/pull operations between staging, development, and production environments, WP Migrate overwrites the `wp_options` table values containing MainWP's child site authentication details.
 
 Standard option filters (`wpmdb_preserved_options`) work for Pull operations, but during Push operations the exporting site reads its own keys and generates SQL insert statements that overwrite the target receiving site's keys upon import.
 
