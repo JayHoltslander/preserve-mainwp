@@ -1,0 +1,15 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Preserve MainWP Connection 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/preserve-mainwp\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Preserve MainWP Connection"
+msgstr "Preservar la conexión de MainWP"
+
+msgid "Preserves MainWP Child connection details from being overwritten during WP Migrate (formerly WP Migrate DB Pro) push/pull operations and database imports."
+msgstr "Conserva los detalles de conexión de MainWP Child para que no se sobrescriban durante las operaciones de envío/recepción e importaciones de bases de datos de WP Migrate (anteriormente WP Migrate DB Pro)."
+
