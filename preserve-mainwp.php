@@ -9,6 +9,7 @@
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: preserve-mainwp
+ * Domain Path: /languages
  * Requires at least: 5.6
  * Requires PHP: 7.4
  */
@@ -40,6 +41,9 @@ class Preserve_MainWP_Connection {
 	}
 
 	public function __construct() {
+		// Load text domain for translations
+		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+
 		// 1. Native WP Migrate DB Pro Preserved Options Filter (Handles Pull migrations)
 		add_filter( 'wpmdb_preserved_options', array( $this, 'preserve_wpmdb_options' ) );
 
@@ -51,6 +55,13 @@ class Preserve_MainWP_Connection {
 		add_action( 'wpmdb_remote_finalize', array( $this, 'restore_local_mainwp_options' ) );
 		add_action( 'wpmdb_migration_complete', array( $this, 'restore_local_mainwp_options' ) );
 		add_action( 'wpmdb_after_finalize_migration', array( $this, 'restore_local_mainwp_options' ) );
+	}
+
+	/**
+	 * Load plugin text domain for internationalization.
+	 */
+	public function load_textdomain() {
+		load_plugin_textdomain( 'preserve-mainwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
