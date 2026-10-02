@@ -3,7 +3,7 @@
  * Plugin Name: Preserve MainWP Connection
  * Plugin URI: https://wordpress.org/plugins/preserve-mainwp/
  * Description: Preserves MainWP Child connection details from being overwritten during WP Migrate (formerly WP Migrate DB Pro) push/pull operations and database imports.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Jay Holtslander
  * Author URI: https://jay.holtslander.ca
  * License: GPL v2 or later

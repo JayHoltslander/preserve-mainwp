@@ -4,7 +4,7 @@ Tags: deliciousbrains, mainwp, migratedbpro, database, wp-migrate
 Requires at least: 5.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,12 +33,15 @@ It preserves settings for WP Migrate (formerly WP Migrate DB Pro / Delicious Bra
 
 == Changelog ==
 
+= 2.0.1 =
+* Updated Tested up to tag to WordPress 7.1.
+* Added pre-bundled translation files (.po / .mo) for 10 languages.
+
 = 2.0.0 =
 * Complete refactor to OOP architecture (`Preserve_MainWP_Connection`).
 * Expanded preserved keys to all 10 MainWP Child authentication keys (`siteid`, `auth`, `connected_admin`, `nossl_key`, `openssl_sign_algo`, `security`).
 * Added pre-migration transient backups (`_preserve_mainwp_backup`) on initiation hooks.
 * Added post-migration DB restoration on finalization hooks to prevent connection loss during Push migrations.
-* Updated compatibility declaration to WordPress 7.1.
 
 = 1.1.0 =
 * Modernized code structure and PHP 7.4+ compatibility.
